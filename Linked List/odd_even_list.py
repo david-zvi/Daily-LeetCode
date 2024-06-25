@@ -1,0 +1,24 @@
+# Solved on 17/06/2024
+# https://leetcode.com/problems/odd-even-linked-list/
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution:
+    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next: return head
+        odd = head
+        even = head.next
+        first_even = even
+        while even.next:
+            odd.next = even.next
+            odd = odd.next
+            if odd.next:
+                even.next = odd.next
+                even = even.next
+            else: even.next = None
+        odd.next = first_even
+        return head
