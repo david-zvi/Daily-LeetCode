@@ -1,6 +1,6 @@
 # Solved on 22/05/2024
 # https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
-
+ 
 class Solution:
     def kidsWithCandies(self, candies, extraCandies):
         max_candies = float("-inf")
