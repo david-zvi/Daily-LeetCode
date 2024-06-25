@@ -1,5 +1,5 @@
 # Solved on 26/05/2024
-# https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+# https://leetcode.com/problems/increasing-triplet-subsequence/
 
 class Solution(object):
     def increasingTriplet(self, nums):
