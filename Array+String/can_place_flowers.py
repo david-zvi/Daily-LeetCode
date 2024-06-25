@@ -1,5 +1,5 @@
 # Solved on 24/05/2024
-# https://leetcode.com/problems/can-place-flowers/description/
+# https://leetcode.com/problems/can-place-flowers/
 
 class Solution(object):
     def canPlaceFlowers(self, flowerbed, n):
